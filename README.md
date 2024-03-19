@@ -92,6 +92,7 @@ Return the JSON representation of your dictionary.
 
 /api/v1.0/stations
 Return a JSON list of stations from the dataset.
+![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/5ec0316b-9f2d-4b05-a913-ae241c09329e)
 
 /api/v1.0/tobs
 Query the dates and temperature observations of the most-active station for the previous year of data.
