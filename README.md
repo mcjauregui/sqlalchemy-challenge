@@ -88,24 +88,24 @@ List all the available routes.
 
 /api/v1.0/precipitation  
 Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
-Return the JSON representation of your dictionary.  
-  Answer: ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/7aafd206-5e8f-4d5c-a66d-f4f4fb1e54fa)
+Return the JSON representation of your dictionary.    
+![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/7aafd206-5e8f-4d5c-a66d-f4f4fb1e54fa)
 
-/api/v1.0/stations
-Return a JSON list of stations from the dataset.
+/api/v1.0/stations  
+Return a JSON list of stations from the dataset.  
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/5ec0316b-9f2d-4b05-a913-ae241c09329e)
 
-/api/v1.0/tobs
+/api/v1.0/tobs  
 Query the dates and temperature observations of the most-active station for the previous year of data.
-Return a JSON list of temperature observations for the previous year.
+Return a JSON list of temperature observations for the previous year.  
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/bcc0000b-93fe-42a6-b69e-cfa5f25add6f)
 
-Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
+Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.  
 
-/api/v1.0/<start>   
-For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
+/api/v1.0/<start>     
+For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.  
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/c0b86180-cd84-4527-94c6-4ab23fd78f3d)
 
-/api/v1.0/<start>/<end>  
-For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
+/api/v1.0/<start>/<end>    
+For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.  
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/8b633f64-7e7a-4a88-b5a6-f308d30f5c64)
