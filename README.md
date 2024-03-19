@@ -21,35 +21,35 @@ Find the most recent date in the dataset.
 Using that date, get the previous 12 months of precipitation data by querying the previous 12 months of data.
 Load the query results into a Pandas DataFrame. Explicitly set the column names. Sort the DataFrame values by "date".  
   Answer:  
-        Date        Precipitation
-  0     2016-08-24           0.08
-  1006  2016-08-24           0.00
-  1524  2016-08-24           2.15  
-  702   2016-08-24           2.28
-  360   2016-08-24           2.15
-  ...          ...            ...
-  1522  2017-08-22           0.00
-  1523  2017-08-23           0.08
-  359   2017-08-23           0.00
-  1005  2017-08-23           0.00
-  2222  2017-08-23           0.45
+        Date        Precipitation  
+  0     2016-08-24           0.08  
+  1006  2016-08-24           0.00  
+  1524  2016-08-24           2.15    
+  702   2016-08-24           2.28  
+  360   2016-08-24           2.15  
+  ...          ...            ...  
+  1522  2017-08-22           0.00  
+  1523  2017-08-23           0.08  
+  359   2017-08-23           0.00  
+  1005  2017-08-23           0.00  
+  2222  2017-08-23           0.45  
 
-[2223 rows x 2 columns]
+[2223 rows x 2 columns]  
 
 Plot the results by using the DataFrame plot method.  
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/2dd8ee07-4f55-4c9f-8e8b-f3067d4c5bc8)
 
 Use Pandas to print the summary statistics for the precipitation data.    
   Answer:    
-         Precipitation  
-  count    2223.000000
-  mean        0.159951
-  std         0.441220
-  min         0.000000
-  25%         0.000000
-  50%         0.010000
-  75%         0.110000
-  max         6.700000
+         Precipitation    
+  count    2223.000000  
+  mean        0.159951  
+  std         0.441220  
+  min         0.000000  
+  25%         0.000000  
+  50%         0.010000  
+  75%         0.110000  
+  max         6.700000  
 
 
 Station Analysis
@@ -68,9 +68,9 @@ Answer the following question: which station id has the greatest number of obser
 
 Design a query that calculates the lowest, highest, and average temperatures that filters on the most-active station id found in the previous query.  
   Answer:   
-    Min: 59.0  
-    Max: 83.0  
-    Mean: 73.0968660968661  
+    Min: 59.0    
+    Max: 83.0    
+    Mean: 73.0968660968661    
 
 Design a query to get the previous 12 months of temperature observation (TOBS) data. To do so, complete the following steps:  
 Filter by the station that has the greatest number of observations.  
@@ -101,15 +101,10 @@ Return a JSON list of temperature observations for the previous year.
 
 Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
 
+/api/v1.0/<start>   
 For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/c0b86180-cd84-4527-94c6-4ab23fd78f3d)
 
+/api/v1.0/<start>/<end>  
 For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
 ![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/8b633f64-7e7a-4a88-b5a6-f308d30f5c64)
-
-
-/api/v1.0/<start> 
-Answer: 
-
-/api/v1.0/<start>/<end>
-Answer:
