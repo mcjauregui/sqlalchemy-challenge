@@ -88,13 +88,12 @@ List all the available routes.
 /api/v1.0/precipitation  
 Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
 Return the JSON representation of your dictionary.  
-  Answer:  
+  Answer:  https://github.com/mcjauregui/sqlalchemy-challenge/blob/main/Screenshot%202024-03-18%20234815.png
 
-  
 /api/v1.0/stations
-
 Return a JSON list of stations from the dataset.
 /api/v1.0/tobs
+
 
 Query the dates and temperature observations of the most-active station for the previous year of data.
 
