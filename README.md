@@ -97,8 +97,7 @@ Return a JSON list of stations from the dataset.
 /api/v1.0/tobs
 Query the dates and temperature observations of the most-active station for the previous year of data.
 Return a JSON list of temperature observations for the previous year.
-Answer: https://github.com/mcjauregui/sqlalchemy-challenge/blob/main/Screenshot%202024-03-18%20234845.png
-
+![image](https://github.com/mcjauregui/sqlalchemy-challenge/assets/151464511/bcc0000b-93fe-42a6-b69e-cfa5f25add6f)
 
 Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
 
